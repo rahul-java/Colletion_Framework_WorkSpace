@@ -1,5 +1,6 @@
 package Collections.Set.TreeSet;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class TreeSetDemo {
@@ -7,7 +8,7 @@ public class TreeSetDemo {
 	public static void main(String[] args) {
 		
 		//store in the natural sorting order
-		//binary tree
+		// data structure binary tree
 		//null is not allowed
 		//it does not store hetrogenious data
 		//only store Homogenious Values
@@ -22,6 +23,7 @@ public class TreeSetDemo {
 		treeSet.add(40);
 		treeSet.add(20);
 		treeSet.add(20);//duplicates are not allowed
+		System.out.println(treeSet.add(20)); //false
 		//treeSet.add(null); //Compile time error java.lang.NullPointerException
 		//treeSet.add("Rahul"); //Compile time error java.lang.NullPointerException
 		
@@ -44,6 +46,13 @@ public class TreeSetDemo {
 		treeSet3.add(100);
 		//treeSet3.add("Rahul");  //Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String
 		System.out.println(treeSet3);
+		
+		
+		Iterator iterator = treeSet.iterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+			
+		}
 		
 	}
 }
