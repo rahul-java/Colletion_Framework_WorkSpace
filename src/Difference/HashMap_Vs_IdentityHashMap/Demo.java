@@ -1,4 +1,4 @@
-package Difference;
+package Difference.HashMap_Vs_IdentityHashMap;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;
